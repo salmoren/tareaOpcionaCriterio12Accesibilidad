@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="author" content="Salvador Moreno Sánchez">
+    <title>Tarea final. Criterio 12. Navegación.</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    
+
+    <!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Estilo -->
+    <link href="css/carrusel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Historia de España a comedia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Enlace 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Enlace 2</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Busca en la página" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="imagenes/granada.jpg" alt="Alhambra de Granada">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Cuentos de la Alhambra</h1>
+            <p>¿Un inglés en Granada sin calcetines y chanclas? ¿Un inglés que vivió en la Alhambra? Descubre a Washington Irving y sus <em>Cuentos de la Alhambra</em></p>
+            <p><a class="btn btn-lg btn-success" href="https://biblioteca.org.ar/libros/132437.pdf">PDF <em>Cuentos de la Alhambra</em></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="imagenes/toledo.jpg" alt="Alcázar de Toledo">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>El Alcázar de Toledo, palacio imperial sin emperador</h1>
+            <p>A lo largo de la historia, el Alcázar ha vivido y visto momentos que han marcado la historia de España, como que fuera reformado como palacio en el siglo XVI para que luego no fuera residido por la familia real</p>
+            <p><a class="btn btn-lg btn-success" href="https://es.wikipedia.org/wiki/Alc%C3%A1zar_de_Toledo">https://es.wikipedia.org/wiki/Alc%C3%A1zar_de_Toledo</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container marketing">
+
+    
+    <div class="row">
+      <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" src="imagenes/carlos4.png" alt="Cara Carlos IV">
+
+        <h2>Carlos IV</h2>
+        <p>¿Por qué llamó el pueblo español a Carlos IV el rey cornudo?</p>
+        <p><a class="btn btn-success" href="https://es.wikipedia.org/wiki/Carlos_IV_de_Espa%C3%B1a">Wikipedia &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" src="imagenes/fernandoSiete.jpeg" alt="Cara Carlos IV">
+
+        <h2>Fernando VII</h2>
+        <p>¿Usaba Fernando VII un cojín con un agujero en el centro?</p>
+        <p><a class="btn btn-success" href="https://es.wikipedia.org/wiki/Fernando_VII_de_Espa%C3%B1a">Wikipedia &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" src="imagenes/isabelDos.jpeg" alt="Cara Carlos IV">
+
+        <h2>Isabel II</h2>
+        <p>¿Isabel II era la viva imagen de la fiesta y, por ello, hacía honor a su nombre familiar? </p>
+        <p><a class="btn btn-success" href="https://es.wikipedia.org/wiki/Isabel_II_de_Espa%C3%B1a">Wikipedia &raquo;</a></p>
+      </div>
+    </div>
+
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Historia de Sevilla</h2>
+        <br>
+        <p class="lead">Esto es un musulmán, un judío y un cristiano que se encuentran en la puerta de un bar... ¿Cómo sigue el chiste? <br><br>Conoce Sevilla, una ciudad donde la diversidad cultural ha hablado por sí sola durante siglos.</p>
+        <p><a class="btn btn-lg btn-success" href="https://es.wikipedia.org/wiki/Alc%C3%A1zar_de_Toledo">Pulsa y descubre Sevilla</a></p>
+        <p>Tiempo para leer este artículo: 5 minutos</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="imagenes/sevilla.jpg" alt="Plaza de España de Sevilla">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+  </div>
+
+
+  <!-- PIE -->
+  <footer class="container">
+    <p class="float-end"><a style="color: green;" href="#">Volver al inicio</a></p>
+    <p>&copy; 2022 Curso Accesibilidad. Máster en Letras Digitales UCM &middot; Creative Commons License</p>
+  </footer>
+</main>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
